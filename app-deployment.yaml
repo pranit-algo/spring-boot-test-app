@@ -1,0 +1,5 @@
+appVersion: app/v1
+kind: deployment
+metadata:
+  name: spring-boot-test-app-deployment
+spec:
