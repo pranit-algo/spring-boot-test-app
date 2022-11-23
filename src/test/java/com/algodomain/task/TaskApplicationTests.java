@@ -15,10 +15,10 @@ class TaskApplicationTests {
 	void contextLoads() {
 	}
 
-	@Test
-	public void testMain() {
-		TaskApplication.main(new String[] {});
-		assertTrue(true);
-	}
+//	@Test
+//	public void testMain() {
+//		TaskApplication.main(new String[] {});
+//		assertTrue(true);
+//	}
 
 }

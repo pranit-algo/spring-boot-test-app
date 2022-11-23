@@ -1,5 +1,23 @@
-appVersion: app/v1
+appVersion: v1
 kind: deployment
 metadata:
-  name: spring-boot-test-app-deployment
+  name: spring-boot-test-app
 spec:
+  containers:
+    - name: spring-boot-test-app-k8s
+      image: spring-boot-test-app-k8s
+      ports:
+        - containerPort: 8080
+
+---
+
+appVersion: v1
+kind: service
+metadata:
+  name: springboot-test-app-crud
+spec:
+  ports:
+    - protocol: "TCP"
+      port: 8080
+      targetPort: 8080
+  type: NodePort

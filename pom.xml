@@ -15,6 +15,7 @@
 	<description>Project for Spring Boot Rest API with Unit Testing</description>
 	<properties>
 		<java.version>11</java.version>
+
 	</properties>
 	<dependencies>
 		<dependency>
